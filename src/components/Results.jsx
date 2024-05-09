@@ -1,13 +1,11 @@
+import Card from './Card';
+
 export default function Results({ results }) {
   return (
-    <div>
-      {results.map((result) => {
-        return (
-          <div key={result.id}>
-            <h2>{result.title}</h2>
-          </div>
-        );
-      })}
+    <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl mx-auto py-4">
+      {results.map((result) => (
+        <Card key={result.id} result={result} />
+      ))}
     </div>
   );
 }

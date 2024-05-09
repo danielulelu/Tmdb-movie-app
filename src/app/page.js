@@ -9,7 +9,7 @@ export default async function Home({ searchParams }) {
     }?api_key=${TMDB_API_KEY}&language=en-US&page=1`
   );
   const data = await res.json();
-  if (res.status !== 200) {
+  if (!res.ok) {
     throw new Error("Failed to fetch the data.");
   }
   const results = data.results;

@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from 'react'
 
-export default function error({error, reset}) {
+export default function Error({error, reset}) { // Capitalized component name
     useEffect(() => {
       console.log(error);
     }, [error]);

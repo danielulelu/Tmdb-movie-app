@@ -1,13 +1,15 @@
 
+
 export const metadata = {
-  title: 'About TMDB',
-  description: 'TMDB is a website that provides information about movies and tv shows. It has strong breadth of data which is largely unmatched and very precise to the movie community and fraternity. Happy browsing',
-}
+  title: "About TMDB",
+  description:
+    "TMDB is a website that provides information about movies and tv shows. It has strong breadth of data which is largely unmatched and very precise to the movie community and fraternity. Happy browsing",
+};
 
 export default function About() {
   return (
     <div className="mx-auto max-w-6xl p-3 space-y-4">
-      <h1 className="text-6xl md:text-8xl font-bold flex items-center justify-center pt-4">
+      <h1 className="text-6xl md:text-8xl font-bold flex items-center justify-center pt-4 hover:text-cyan-500">
         Hi there
       </h1>
 
